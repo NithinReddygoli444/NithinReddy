@@ -1,0 +1,82 @@
+8/1/25:-
+javaScript operators:
+1)Arithimetic :
++,-,*,/
+Multiplication - *
+Division - / 
+Modulus operator - % ®
+Exponential (rasied to power)- **,
+++,
+--,
+Example:
+	let a = 10
+        let b= 5
+        b++
+        a--
+        document.write(b,"<br>")
+        document.write(a,"<br>")
+        document.write(a%b,"<br>")
+        document.write(a/b,"<br>")
+        document.write(a*b,"<br>")
+        document.write(a**b)
+Assignment operator:
+Var student = “Nithin”
++=
+-=
+/=
+%=
+Example:
+         let a = 10
+        let b= 5
+        b-=30
+        document.write(b,"<br>")
+        a+=30
+       document.write(a,"<br>")
+logical operators:
+                  and - &&
+                    T and T = T
+                    Or - ||
+                     T or F = F
+                       Null = !
+Example:
+        let a = 10
+        let b= 5
+        document.write(a>b && b>11,"<br>")
+        document.write(a>b || b>11,"<br>")
+        document.write(!(false),"<br>")
+        document.write(!(a>b),"<br>"
+relation(comparsion)values:
+<,>,>=,<=,==,===,!=,!===
+==   - equality
+Example:
+	 let a = 105
+        let b = "105"
+        document.write(a!=b,"<br>")
+        document.write(a===b,"<br>")
+Conditional operator ; ternary operator(?)
+First evaluate an expression for a true or false;
+Syntax:
+Condition ? e1:e2
+Example:
+        let t = 40
+        let r=(t>40) ? "Ac-off":"Ac-on"
+        document.write(r)
+output:
+Ac-on
+Windows:
+  	Alert()
+		alert("hi nithin")
+console.log(alert)
+
+Prompt()
+	let name=prompt("Enter your name?")
+        	alert(name)
+
+Confirm()
+	aa=prompt()
+        bb=prompt()
+        console.log(typeof(aa))
+        document.write(typeof(aa))
+        console.log(aa+bb)
+        document.write(aa+bb)
+
