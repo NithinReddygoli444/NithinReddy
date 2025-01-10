@@ -1,0 +1,82 @@
+Q1) let n=parseInt(prompt("Enter a number:"))
+         if(n%2==0 && n%3==0){ 
+           alert(n+" divisible by both 2 and 3")
+        }
+         else{
+             alert(n+" not divisible by 2 and 3")
+        }
+        
+Q2) let A = parseInt(prompt("Enter the number1"))
+         let B = parseInt(prompt("Enter the number2"))
+        let c = parseInt(prompt("Enter the number3"))
+        if (A>B && A>c){
+           alert(" A is greater")
+         }else if(B>A && B>c){
+             alert("B is greater")
+        }else{
+             alert("C is greater")
+         }
+         
+Q3) let a = parseInt(prompt("Enter the working days"))
+        let b = parseInt(prompt("Enter the absent days"))
+         let p = a-b
+         let w=(p/a)*100
+        if(w>=75){
+            document.write("eligible")
+         }else{
+             document.write("not eligible")
+        }
+        
+Q4) let a=parseInt(prompt("salary"))
+        let b=parseInt(prompt("years of service"))
+        if(b>10){
+            let c=a*0.1
+            let d=c+a
+            alert("after bonus salary"+d)
+        }
+        else if(b>=6 && b<=10){
+            let c=a*0.08
+            let d=c+a
+            alert("after bonus salary"+d)
+        }
+        else if(b<6){
+            let c=a*0.05
+            let d=c+a
+            alert("after bonus salary"+a)
+        }
+        else{
+            alert(a)
+        } 
+        
+
+Switch:
+If
+Else
+Else if
+Syntax:
+Switch(variable/expression){
+Case 1:
+//block of code
+Break
+Case 2:
+//block of code
+break
+Case 3:
+//block of code
+break
+Case 4:
+//block of code
+Break
+Default:
+//block of code
+}
+Example:
+For I in range(5):
+If i>3:
+Break
+Print(i)
+output:
+0
+1
+2
+3
