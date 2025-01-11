@@ -1,0 +1,64 @@
+Program1:
+let days = prompt("Enter the day")
+         switch(days){
+            case 'monday':
+            case 'tuesday':
+            case 'wednesday':
+            case 'thursday':
+                console.log("it is a week day");
+                document.write("it is a week day");
+                break;
+            case 'friday':
+            case 'saturday':
+            case 'sunday':
+                console.log("it is weekend");
+                document.write("it is weekend");
+            default:
+            console.log("invalid day");
+            document.write("invalid day");
+
+         }
+Program2:
+let n = prompt("Enter the number")
+switch(true){
+case n>0:
+console.log("number is positive");
+document.write("number is positive");
+break;
+
+case n==0:
+console.log("number is zero");
+document.write("number is zero");
+break;
+
+    	   case n<0:
+     	  console.log("number is negative");
+       	document.write("number is negative");
+          		   break;
+            	default:
+                   console.log("invalid Input");
+                   document.write("invalid Input");
+                }
+Calculate Electricity Bill:-
+function calculateElectricityBill(units) {
+  let totalCharge = 0;
+
+  if (units <= 50) {
+    totalCharge = units * 2;
+  } else if (units <= 150) {
+    totalCharge = 50 * 2 + (units - 50) * 3;
+  } else if (units <= 250) {
+    totalCharge = 50 * 2 + 100 * 3 + (units - 150) * 5;
+  } else {
+    totalCharge = 50 * 2 + 100 * 3 + 100 * 5 + (units - 250) * 8;
+  }
+
+  
+  totalCharge += totalCharge * 0.2;
+
+  return totalCharge;
+}
+
+const unitsUsed = prompt("enter the units")
+const totalBill = calculateElectricityBill(unitsUsed);
+console.log(`The total electricity bill for ${unitsUsed} units is: ₹${totalBill.toFixed(2)}`);
