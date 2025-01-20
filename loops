@@ -1,0 +1,50 @@
+20/1/25
+
+1)for loop:
+Syntax:
+For(intialisation; condition;update-expression{
+--block of code
+}
+Example:
+for(let i=1;i<=5;i++){
+    console.log(i)
+   }
+#10-15
+#i=1 ;2  ;3 ;4 ; 5 ;6
+#C=1<5 ; 2<=5 ; 3<=5 ; 4<=5 ;5<=5 ;6<=5 #f
+for(let i=0;i<=5;i++){
+    console.log(i)
+    document.write(i +" ")
+   
+   }
+   document.write("<br>")
+   for(let i=2;i<=9;i=i+2){
+    console.log(i+3)
+    document.write(i+3 +" ")
+    
+   }
+   document.write("<br>")
+for(let i=1;i<=5;i++){
+    document.write("chiru"+" ")
+}
+document.write("<br>")
+
+         for(let i=1;i<=10;i++){
+            document.write("9x",i,"=",9*i,"<br>")
+            console.log("9x",i,"=",9*i)
+        } 
+
+Output:
+0 1 2 3 4 5
+5 7 9 11
+chiru chiru chiru chiru chiru
+9x1=9
+9x2=18
+9x3=27
+9x4=36
+9x5=45
+9x6=54
+9x7=63
+9x8=72
+9x9=81
+9x10=90
