@@ -1,0 +1,49 @@
+22/01/25
+for (let i=2;i<=8;i=i+1){
+            if(i>5){
+                continue
+            }
+            console.log(i+2)
+        }
+Output:
+4 5 6 7
+Nested loop:
+A loop inside the another loop
+The inner loop will execute one time for each iteration of the loop
+An inner loop within the repeating block of outer loop.
+Example:
+for(let i=1;i<=3;i++){
+            document.write(i,"<br>")
+            for(let j=0;i<=4;j++){
+                    document.write(j,"");
+            }
+            document.write("<br>")
+        }
+// right angle pyramid
+        for(let i=1; i<=5; i++){
+        for(let j=1;j<=i;j++){
+          document.write("*")
+        }
+        document.write("<br>")
+      }
+      //Pyramid
+for (let i = 1; i <= 4; i++) {
+      for (let j = 1; j <= 4 - i; j++) {
+        document.write("&nbsp;");
+      }
+      for (let k = 1; k <= i; k++) {
+        document.write("*");
+      }
+      document.write("<br>");
+    }
+    document.write("<br>");
+   //r.pyramid
+    for (let i = 4; i >= 1; i--) {
+  for (let j = 1; j <= 4 - i; j++) {
+    document.write("&nbsp;");
+  }
+  for (let k = 1; k <= i; k++) {
+    document.write("*");
+  }
+  document.write("<br>");
+}
