@@ -1,0 +1,107 @@
+31/01/25
+Dom methods :
+1)create Elements (single , multiple)
+2)appendChild() #parent at the end
+3)insertBefore(): insert a new node before an existing node as child node of a specified parent
+--requires a reference to both the new node and existing node  you want to insert before.
+
+Ex:
+<div id="a">
+        <h1>ravi</h1>
+        <h1 id="r">hari</h1>
+    </div>
+    <div id="b">
+        <h2>ram</h2>
+        <h2>sai</h2>
+    </div>
+    <script>
+         let n=document.createElement('h1')
+            n.textContent="chiru"
+            let p=document.getElementById('a')
+            let l = document.getElementById('r')
+            p.insertBefore(n,l)
+            console.log(p.innerText)
+
+
+
+
+Exp2:
+<body>
+    <div id="a">
+        <h1>mani</h1>
+        <h1 id="rr">hari</h1>
+    </div>
+    <div id="b">
+        <h2>ram</h2>
+        <h2>sai</h2>
+    </div>
+    <script>
+         let nn=document.createElement('h2')
+            nn.textContent="nithin"
+            let p=document.getElementById('a')
+            let ll = document.getElementById('rr')
+            p.insertBefore(nn,ll)
+            console.log(p.innerText)
+    </script>
+</body>
+
+Using append:
+<div id="a">
+        <h1>mani</h1>
+        <h1 id="rr">hari</h1>
+    </div>
+    <div id="b">
+        <h2>ram</h2>
+        <h2>sai</h2>
+    </div>
+    <script>
+         let nn=document.createElement('h2')
+            nn.textContent="nithin"
+            let p=document.getElementById('a')
+            let ll = document.getElementById('rr')
+            p.insertBefore(nn,ll)
+            console.log(p.innerText)
+            p.appendChild(nn)
+            console.log(p.innerText)
+    </script>
+
+Remove element:
+Ex:
+ let b= document.getElementById('a')
+            b.remove()
+to Removechild element:
+removechild():
+exp:
+<div id="a">
+        <h1>mani</h1>
+        <h1 id="d">hari</h1>
+    </div>
+    <div id="b">
+        <h2>ram</h2>
+        <h2>sai</h2>
+    </div>
+    <script>
+            let p= document.getElementById('a')
+            let a= document.getElementById('d')
+            console.log(a)
+            p.remove(a)
+
+    </script>
+
+To Replace a element:
+“malla reddy university”
+Exp:
+<div id="a">
+        <h1 id="d">mani</h1>
+        <h1 >hari</h1>
+    </div>
+    <div id="b">
+        <h2>ram</h2>
+        <h2>sai</h2>
+    </div>
+    <script>
+        let n= document.createElement('hi')
+        n.textContent= "Malla Reddy University"
+            let p= document.getElementById('a')
+           p.replaceChildren(n)
+    </script>
